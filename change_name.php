@@ -12,15 +12,15 @@ $root_username = "root";
 $root_password = "";
 $user_db = $_SESSION['user_db'];
 
-// Create connection to the user's database
+// Create connection 
 $conn = new mysqli($servername, $root_username, $root_password, $user_db);
 
-// Check connection to user's database
+// Check connection 
 if ($conn->connect_error) {
     die("Connection to user's database failed: " . $conn->connect_error);
 }
 
-// Update the username to 'Arif'
+// Update the username to
 $update_sql = "UPDATE user_data SET username = 'Arif' WHERE username = '" . $_SESSION['username'] . "'";
 if ($conn->query($update_sql) === TRUE) {
     echo "Username changed to Arif!<br>";

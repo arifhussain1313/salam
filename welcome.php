@@ -21,7 +21,7 @@ $user_db = $_SESSION['user_db'];
 <body>
     <h2>Welcome, <?php echo htmlspecialchars($username); ?>!</h2>
 
-    <!-- Button to change the username to "Arif" -->
+    <!-- Button to change the username  -->
     <form action="change_name.php" method="post">
         <input type="submit" value="Change Username to Arif">
     </form>
